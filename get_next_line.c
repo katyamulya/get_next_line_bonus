@@ -125,3 +125,33 @@ char	*ft_get_buffer(char *buffer)
 	buf[j] = '\0';
 	return (free(buffer), buf);
 }
+/*
+int main(void)
+{
+	char *line;
+	int count;
+	int fd;
+	int i = 0;
+
+	count = 0;
+	fd = open("tmp.txt", O_RDONLY);
+	if (fd == -1)
+	{
+		printf("Error opening file");
+		return (1);
+	}
+	while (i < 3)
+	{
+		line = get_next_line(fd);
+	   //if (line == NULL)
+		//    break ;
+		count++;
+		printf("Got LIne %d: %s\n", count, line);
+		free(line);
+		line = NULL;
+		i++;
+	}
+	close(fd);
+	return (0);
+}
+*/
